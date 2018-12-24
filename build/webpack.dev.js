@@ -22,7 +22,8 @@ module.exports = {
       ],
     },
     hot: true,//热重载
-    contentBase: './lib', // since we use CopyWebpackPlugin.
+    disableHostCheck: true,
+    contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,//启用gzip压缩
     host: '127.0.0.1',
     port: 20000,  //端口号
