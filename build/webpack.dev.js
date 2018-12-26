@@ -46,6 +46,32 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         } 
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: path.posix.join('lib', '/img/[name].[hash:7].[ext]')
+        }
+      },
+      //视频编译
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: path.posix.join('lib', '/media/[name].[hash:7].[ext]')
+        }
+      },
+       //视频编译
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: path.posix.join('lib', '/fonts/[name].[hash:7].[ext]')
+        }
       }
     ]
   },

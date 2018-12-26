@@ -17,3 +17,7 @@ webpack.conf.js是xcharts文件的配置<br>
 <img src="./正常.png"><br>
 鼠标悬停放大:<br>
 <img src="鼠标悬停.png">
+
+
+旋转<br>
+<img src="rotate.gif">
