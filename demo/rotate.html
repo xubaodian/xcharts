@@ -11,6 +11,8 @@
   <img src="../asserts/room.jpg" style="display: none" id="room">
   <script>
     let roomImg = document.getElementById('room'); 
+    //获取绘图上下文
+    let ctx = document.getElementById('canvas').getContext('2d');
     let timer = null;
     //旋转的角度
     let startAngle = 0;
@@ -47,9 +49,6 @@
         drawAll();
       });
     }
-  
-    //获取绘图上下文
-    let ctx = document.getElementById('canvas').getContext('2d');
    
     //添加楼房背景
     function addBk() {
