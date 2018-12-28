@@ -10,7 +10,7 @@ webpack.conf.js是xcharts文件的配置<br>
 欢迎一起讨论，学习。
 
 
-本工程构建的目的是用于学习canvas。<br>
+本工程构建的目的是用于学习测试代码，例如学习canvas。<br>
 
 画饼图<br>
 正常：<br>
